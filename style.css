@@ -4,7 +4,7 @@
 }
 .nav-var {
   display: flex;
-  width: 1940px;
+  width: 1440px;
   height: 112px;
   justify-content: center;
   align-items: center;
@@ -189,7 +189,7 @@ li {
 }
 .img {
   position: static;
-  width: 468.61px;
+  width: 368.61px;
   height: 575px;
   margin-left: 200px;
 }
@@ -272,7 +272,7 @@ li {
   line-height: 57.5px;
   letter-spacing: 0%;
   text-align: center;
-  width: 2000.61px;
+  width: 1500.61px;
   height: 57.5px;
   display: flex;
   flex-direction: column;
