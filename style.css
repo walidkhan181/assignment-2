@@ -49,6 +49,12 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
+.marq {
+  background-color: aqua;
+  font-family: Quicksand;
+  font-size: 20px;
+  color: navy;
+}
 .btn {
   color: rgb(255, 255, 255);
   font-family: Quicksand;
@@ -136,14 +142,13 @@ li {
 }
 .banner {
   position: static;
-  width: 100%;
+  width: 85%;
   height: 575px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 50;
-  padding: 0px;
 }
 .banner-heading {
   font-family: Quicksand;
@@ -370,7 +375,6 @@ li {
   height: 1218.02px;
 }
 .stories-container {
-  position: relative;
   width: 540.27px;
   height: 630.52px;
   border-radius: 16px;
@@ -381,6 +385,7 @@ li {
   border-radius: 16px 16px 0px 0px;
 
   background: url(), rgb(217, 217, 217);
+  margin-bottom: 0%;
 }
 .container-2 {
   display: flex;
@@ -405,19 +410,24 @@ li {
   padding: 60px 0px 60px 0px;
   margin: 80px 0px;
 }
+.story-btn-1st {
+  margin-top: -30px;
+  margin-left: 38px;
+}
 .story-btn {
   border-radius: 47.93px;
-
+  position: relative;
   background: rgb(60, 216, 232);
-  position: absolute;
   width: 174.51px;
   height: 47.93px;
-  left: 38.35px;
-  top: 314.14px;
   color: rgb(255, 255, 255);
   font-family: Raleway;
   font-size: 15.34px;
   font-weight: 500;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
   border: none;
 }
 .story-heading {
@@ -430,11 +440,8 @@ li {
   text-align: left;
   width: 402.49px;
   height: 69.98px;
-  left: 0;
-  top: 2.88px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-top: 40px;
   margin-left: 45px;
 }
@@ -465,7 +472,6 @@ li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin-left: -300px;
 }
 .story-2-btn {
   border-radius: 47.93px;
@@ -637,16 +643,23 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-
+.nav-menu {
+  display: none;
+}
 @media screen and (max-width: 576px) {
   .hide {
     display: none;
   }
+  .nav-menu {
+    display: block;
+  }
   .nav-var {
     width: 100%;
+    max-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid orange;
   }
-
   .logo {
     font-size: 18px;
   }
@@ -657,11 +670,6 @@ footer {
     align-items: center;
     padding: 0;
     gap: 10px;
-  }
-
-  li {
-    font-size: 14px;
-    display: none;
   }
 
   .btn {
@@ -680,10 +688,10 @@ footer {
   }
 
   .img {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 350px;
     margin-right: 290px;
   }
 
@@ -702,17 +710,70 @@ footer {
   }
 
   .banner-para {
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
     font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 357px;
+    height: 54px;
   }
 
+  .bg-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .story-2-btn,
+  .story-3-btn,
+  .story-4-btn,
+  .story-5-btn {
+    font-size: 9.13px;
+    font-weight: 500;
+    line-height: 17.12px;
+    width: 103.91px;
+    height: 22.83px;
+  }
+  .story-2-img {
+    width: 173.27px;
+    height: 105.39px;
+  }
+  .story-2-content {
+    font-size: 9.13px;
+    font-weight: 700;
+    line-height: 17.12px;
+    max-width: 117.92px;
+    max-height: 28.54px;
+  }
+  .story-box {
+    max-width: 173.27px;
+    max-height: 179px;
+  }
   .btn-enroll {
     max-width: 200px;
     font-size: 16px;
     padding: 10px;
   }
-
+  .bg-2 {
+    width: 100%;
+  }
+  .story-2-btn,
+  .story-3-btn,
+  .story-4-btn,
+  .story-5-btn {
+    position: static;
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  .story-2-btn {
+    position: static;
+  }
   .section-container {
     margin: 20px 10px;
     padding: 15px;
@@ -745,6 +806,7 @@ footer {
     max-width: 300px;
   }
   .list-heading {
+    margin-top: 20px;
     max-width: 300px;
   }
 }
