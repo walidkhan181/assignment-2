@@ -697,8 +697,10 @@ footer {
 
   .heading {
     font-size: 26px;
+    margin-top: 400px;
     font-weight: 700;
     line-height: 33px;
+    position: static;
   }
   .banner-heading {
     font-family: Quicksand;
